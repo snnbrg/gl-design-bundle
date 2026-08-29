@@ -1,0 +1,65 @@
+<title>Golden Lotus Signature</title>
+<style>
+  :root{ --cream:#F4F1EA; --ink:#1B201D; --inksoft:#3C443E; --celadon:#4C6157; --rule:#D8D2C2; --panel:#FFFFFF; }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --cream:#181C19; --ink:#EDEAE0; --inksoft:#B9BFB4; --celadon:#9FB3A8; --rule:#333B33; --panel:#FFFFFF; } }
+  :root[data-theme="dark"]{ --cream:#181C19; --ink:#EDEAE0; --inksoft:#B9BFB4; --celadon:#9FB3A8; --rule:#333B33; --panel:#FFFFFF; }
+  body{ background:var(--cream); color:var(--ink); margin:0; padding:48px 20px; font-family:Helvetica,Arial,sans-serif; }
+  .frame{ max-width:640px; margin:0 auto; }
+  h1{ font-family:Georgia,serif; font-weight:normal; font-size:26px; margin:0 0 6px; }
+  .lede{ font-size:14px; color:var(--celadon); margin:0 0 26px; }
+  .sigbox{ background:var(--panel); border:1px solid var(--rule); padding:28px; }
+  .btn{ display:inline-block; margin-top:18px; background:#1B201D; color:#F4F1EA; border:none; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; padding:13px 26px; cursor:pointer; font-family:Helvetica,Arial,sans-serif; }
+  .btn:focus-visible{ outline:2px solid var(--celadon); outline-offset:2px; }
+  .done{ font-size:13px; color:var(--celadon); margin-left:14px; opacity:0; transition:opacity .3s; }
+  .done.show{ opacity:1; }
+  .howto{ font-size:13px; line-height:1.7; color:var(--inksoft); margin-top:26px; }
+  .howto b{ color:var(--ink); }
+</style>
+<div class="frame">
+  <h1>Your email signature</h1>
+  <p class="lede">Golden Lotus &middot; prepared for Lelle Hagström</p>
+  <div class="sigbox"><table cellpadding="0" cellspacing="0" border="0" style="font-family:Helvetica,Arial,sans-serif;">
+  <tr>
+    <td style="vertical-align:middle; padding-right:24px; text-align:center;">
+      <img src="https://snnbrg.github.io/gl-design-bundle/gl-assets/logo-mark-gold.png" alt="Golden Lotus" width="66" height="55" style="display:block; width:66px; height:auto; margin:0 auto 9px auto;">
+      <div style="font-family:Georgia,'Times New Roman',serif; font-size:16px; letter-spacing:1px; color:#1B201D; white-space:nowrap;">Golden&nbsp;Lotus</div>
+      <div style="font-size:10px; letter-spacing:1px; color:#4C6157; margin-top:3px; white-space:nowrap;">Medical&nbsp;Concierge</div>
+    </td>
+    <td style="vertical-align:middle; border-left:1px solid #D8D2C2; padding-left:24px;">
+      <table cellpadding="0" cellspacing="0" border="0" style="font-family:Helvetica,Arial,sans-serif;">
+        <tr><td style="font-family:Georgia,'Times New Roman',serif; font-size:17px; color:#1B201D; padding-bottom:2px;">Lelle Hagström</td></tr>
+        <tr><td style="font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#4C6157; padding-bottom:12px;">Founder &amp; CEO</td></tr>
+        <tr><td style="font-size:12px; line-height:20px; color:#3C443E;">+66 81 501 9115 &nbsp;&middot;&nbsp; WhatsApp +46 70 665 64 00<br>
+          <a href="mailto:info@goldenlotusmedicaltravel.com" style="color:#4C6157; text-decoration:none;">info@goldenlotusmedicaltravel.com</a><br>
+          <a href="https://goldenlotusmedicaltravel.com" style="color:#4C6157; text-decoration:none;">goldenlotusmedicaltravel.com</a></td></tr>
+        <tr><td style="font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:#9A958A; padding-top:12px;">Private medical travel &nbsp;&middot;&nbsp; Bangkok &nbsp;&middot;&nbsp; By application</td></tr>
+      </table>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="padding-top:16px;"><span style="font-size:10px; line-height:14px; color:#B5B0A4;">This message and any attachments are confidential and intended solely for the addressee. If you have received it in error, please delete it and let us know; please do not copy or share its contents.</span></td></tr>
+</table></div>
+  <button class="btn" id="copybtn">Copy signature</button><span class="done" id="done">Copied &mdash; now paste it into your mail settings.</span>
+  <p class="howto">
+    <b>Gmail:</b> Settings &rarr; See all settings &rarr; General &rarr; Signature &rarr; Create new &rarr; paste.<br>
+    <b>Apple Mail:</b> Settings &rarr; Signatures &rarr; + &rarr; paste, and untick &ldquo;Always match my default message font&rdquo;.<br>
+    <b>Outlook:</b> Settings &rarr; Compose and reply &rarr; Email signature &rarr; paste.<br><br>
+    Then send yourself one test email to see it as clients will. The lotus loads from the Golden Lotus asset library, so it appears for every recipient without attachments.
+  </p>
+</div>
+<script>
+const SIG = "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-family:Helvetica,Arial,sans-serif;\">\n  <tr>\n    <td style=\"vertical-align:middle; padding-right:24px; text-align:center;\">\n      <img src=\"https://snnbrg.github.io/gl-design-bundle/gl-assets/logo-mark-gold.png\" alt=\"Golden Lotus\" width=\"66\" height=\"55\" style=\"display:block; width:66px; height:auto; margin:0 auto 9px auto;\">\n      <div style=\"font-family:Georgia,'Times New Roman',serif; font-size:13px; letter-spacing:3px; color:#1B201D; white-space:nowrap;\">Golden&nbsp;Lotus</div>\n      <div style=\"font-size:8px; letter-spacing:2.5px; color:#4C6157; margin-top:4px; white-space:nowrap;\">Medical&nbsp;Concierge</div>\n    </td>\n    <td style=\"vertical-align:middle; border-left:1px solid #D8D2C2; padding-left:24px;\">\n      <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-family:Helvetica,Arial,sans-serif;\">\n        <tr><td style=\"font-family:Georgia,'Times New Roman',serif; font-size:17px; color:#1B201D; padding-bottom:2px;\">Lelle Hagstr\u00f6m</td></tr>\n        <tr><td style=\"font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#4C6157; padding-bottom:12px;\">Founder &amp; CEO</td></tr>\n        <tr><td style=\"font-size:12px; line-height:20px; color:#3C443E;\">+66 81 501 9115 &nbsp;&middot;&nbsp; WhatsApp +46 70 665 64 00<br>\n          <a href=\"mailto:info@goldenlotusmedicaltravel.com\" style=\"color:#4C6157; text-decoration:none;\">info@goldenlotusmedicaltravel.com</a><br>\n          <a href=\"https://goldenlotusmedicaltravel.com\" style=\"color:#4C6157; text-decoration:none;\">goldenlotusmedicaltravel.com</a></td></tr>\n        <tr><td style=\"font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:#9A958A; padding-top:12px;\">Private medical travel &nbsp;&middot;&nbsp; Bangkok &nbsp;&middot;&nbsp; By application</td></tr>\n      </table>\n    </td>\n  </tr>\n  <tr><td colspan=\"2\" style=\"padding-top:16px;\"><span style=\"font-size:10px; line-height:14px; color:#B5B0A4;\">This message and any attachments are confidential and intended solely for the addressee. If you have received it in error, please delete it and let us know; please do not copy or share its contents.</span></td></tr>\n</table>";
+document.getElementById('copybtn').addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.write([new ClipboardItem({
+      'text/html': new Blob([SIG], {type:'text/html'}),
+      'text/plain': new Blob(['Lelle Hagstr\u00f6m \u00b7 Founder & CEO \u00b7 Golden Lotus \u00b7 +66 81 501 9115 \u00b7 WhatsApp +46 70 665 64 00 \u00b7 info@goldenlotusmedicaltravel.com \u00b7 goldenlotusmedicaltravel.com'], {type:'text/plain'})
+    })]);
+    document.getElementById('done').classList.add('show');
+  } catch (e) {
+    const r = document.createRange(); r.selectNodeContents(document.querySelector('.sigbox'));
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    document.execCommand('copy');
+    document.getElementById('done').classList.add('show');
+  }
+});
+</script>
